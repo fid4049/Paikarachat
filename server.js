@@ -1,4 +1,4 @@
-// server/server.js
+// server.js
 const express = require("express");
 const cors = require("cors");
 const Pusher = require("pusher");
@@ -22,4 +22,4 @@ app.post("/send-message", (req, res) => {
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));
